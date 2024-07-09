@@ -3,13 +3,17 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
 }
 
 .section{
     height: 100vh;
-    /* border: 2px outset black; */
+    border: 2px outset black;
 }
 
 /*--- header part of section 1 -----*/
@@ -78,7 +82,7 @@ body{
 
 
 .header_sec_content{
-    border: 2px outset black;
+    /* border: 2px outset black; */
     width: 25%;
     position: relative;
     top: 35vh;
@@ -151,6 +155,7 @@ body{
 }
 
 
+
 @keyframes hover_ani{
 
     from{
@@ -186,6 +191,363 @@ body{
 }
 
 /*------- end of section-1 body ------*/
+
+/*-------section 2 start ------------*/
+
+.about_sec_innerdiv{
+    border: 2px outset black;
+    height: 90vh;
+    position: relative;
+    top: 10vh;
+}
+
+.about_sec_innerdiv_child_header{
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about_sec_innerdiv_child_body{
+    background-color:white;
+    height: 80vh;
+    overflow-y: hidden;
+}
+
+.about_sec_innerdiv_child_body-span_cover{
+
+    background-color:black;
+    overflow: auto;
+
+   
+    border-radius: 20px;
+    margin: 1%;
+
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.about_sec_innerdiv_child_body-span_cover span{
+    background-color:aliceblue;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all .3s ease;
+}
+
+.about_sec_innerdiv_child_body-span_cover span:hover{
+    background-color: lightgray;
+    box-shadow: 8px 8px  #5218ee;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+
+.about_sec_innerdiv_child_body-span_cover p:hover{
+    strong{
+        text-decoration: underline;
+    }
+}
+
+.about_sec_innerdiv_child_body-span_cover span:first-child{
+    margin-top: 22px;
+}
+.about_sec_innerdiv_child_body-span_cover span:last-child{
+    margin-bottom: 22px;
+}
+
+.about_sec_innerdiv_child_body p{
+    font-size:x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 40px;
+}
+/*------section 3 start -------*/
+
+.skills_sec3_inner_div{
+    background-color: white;
+    height: 90vh;
+    position: relative;
+    top:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.skill_sec3_ineer_div_clild{
+    width: 90%;
+    height: 80vh;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: auto;
+
+    transition: all .2s ease;
+    transform: scale(.9);
+}
+
+.skill_sec3_ineer_div_clild:hover{
+    box-shadow: 10px 10px 5px #5218ee;
+    transform: scale(1);
+    border-radius: 10px;
+}
+
+
+.skill_sec3_ineer_div_clild h1{
+    margin: 20px;
+    
+}
+
+.skill_sec3_ineer_div_clild h1:hover{
+    text-decoration: underline;
+}
+.skill_sec3_ineer_div_clild p{
+    font-size: large;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: all .2s ease;
+
+}
+
+.skill_sec3_ineer_div_clild p:hover{
+    font-size: 20px;
+
+    strong{
+        text-decoration: underline;
+    }
+
+}
+
+/*--end of section3--*/
+
+/*------section 4 start --------*/
+
+.project_sec4_inner_div{
+    height: 90vh;
+    /* background-color:antiquewhite; */
+    position: relative;
+    top: 10vh;
+
+}
+
+.project_sec4_inner_div_child_header{
+    height: 10vh;
+    /* background-color: aqua; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.project_sec4_inner_div_child_body{
+    height:70vh;
+    background-color: azure;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    display: flex;
+    gap: 30px;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    transition: all .3s ease;
+
+    overflow-y: auto;
+
+}
+
+.project_sec4_inner_div_child_body:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 5px #5218ee ;
+}
+
+.card{
+    /* background-color: black; */
+    background-color:cornflowerblue;
+    flex: 1;
+    
+    margin: 3%;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    transition: all .2s ease;
+
+
+}
+
+.card img{
+    width: 60%;
+}
+
+.trail{
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    transform: rotateY(180deg);
+
+    /* visibility: hidden; */
+    display: none;
+}
+
+.card:hover{
+    transform: rotatey(180deg) scale(1.05);
+    /* background-color: aqua; */
+    background-color: black;
+    box-shadow: 10px 10px 3px gray;
+    
+
+    img{
+        display: none;
+    }
+
+    .trail{
+        /* visibility: visible; */
+        display: block;
+    }
+
+
+}
+
+/*-----end of section 4 -------*/
+
+.resume_sec5_inner_div{
+    /* background-color:antiquewhite; */
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.resume_sec5_inner_div button{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: larger;
+    border-radius: 100px;
+    background-color: aliceblue;
+    transition: all .3s ease;
+}
+
+.resume_sec5_inner_div h1{
+    margin: 20px;
+}
+
+.resume_sec5_inner_div button:hover{
+    background-color: gray;
+    box-shadow: 2px 2px 5px 5px #5218ee;
+}
+/*-------end of section 5 -------*/
+
+/*-------- section 6 start -------*/
+
+
+.contact_sec6_inner_div{
+    height: 90vh;
+    position: relative;
+    top: 10vh;
+    background-color: antiquewhite;
+}
+
+.contact_sec6_inner_div_child_body{
+    background-color: white;
+    height: 80vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items:center;
+    /* margin-bottom: 4%; */
+
+}
+
+.contact_icon_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* background-color: aliceblue; */
+}
+
+.contact_icon_wrap p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+}
+
+.contact_icon_wrap a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact_ions{
+    width: 50px;
+    transition: all .2s ease;
+}
+
+.contact_ions:hover{
+    transform: scale(1.2);
+}
+
+
+
+.footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-color: black;
+}
+
+.footer a{
+    transition: all .3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    cursor: pointer;
+}
+
+.footer:hover{
+    a{
+        color: chartreuse;
+        text-decoration: underline;
+    }
+}
+
+
+
 
 /*--- responsiveness css of section-1 start   ---*/
 
@@ -449,5 +811,27 @@ body{
     .list{
         margin-right: 10px;
         
+    }
+}
+
+
+/*--section 4 responsiveness start  --*/
+
+@media screen  and (max-width: 800px){
+    .project_sec4_inner_div_child_body{
+        flex-direction: column;
+    }
+
+    .card img{
+        height: 100px;
+        width: auto;
+    }
+}
+
+@media screen  and (max-width: 400px)
+{
+    .card img{
+        height: 70px;
+        width: auto;
     }
 }
