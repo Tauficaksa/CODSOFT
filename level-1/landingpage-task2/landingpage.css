@@ -1,16 +1,19 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #282c34;
-    color: #ffffff;
-    animation: fadeIn 1s ease-in;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
     background-color: #333;
     color: #61dafb;
-    animation: fadeIn 2s ease-in;
 }
 
 .main-header {
@@ -23,6 +26,8 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -44,7 +49,6 @@ nav ul li a:hover {
     padding: 100px 20px;
     background: linear-gradient(to right, #21a0a0, #61dafb);
     color: #ffffff;
-    animation: slideIn 1s ease-out;
 }
 
 .hero-section h1 {
@@ -78,7 +82,6 @@ nav ul li a:hover {
     background: linear-gradient(to right, #ff6f61, #21a0a0);
     padding: 50px 20px;
     color: #ffffff;
-    animation: fadeIn 2s ease-in;
 }
 
 .feature {
@@ -91,7 +94,6 @@ nav ul li a:hover {
     padding: 50px 20px;
     background-color: #ffffff;
     color: #282c34;
-    animation: fadeIn 2s ease-in;
 }
 
 .about-us button {
@@ -113,7 +115,6 @@ nav ul li a:hover {
     padding: 50px 20px;
     background-color: #f4f4f4;
     color: #282c34;
-    animation: fadeIn 2s ease-in;
 }
 
 .services .service {
@@ -129,22 +130,46 @@ footer {
     padding: 20px;
 }
 
-/* @keyframes fadeIn {
-    from {
-        opacity: 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
     }
-    to {
-        opacity: 1;
-    }
-} */
 
-/* @keyframes slideIn {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-    to {
-        transform: translateY(0);
-        opacity: 1;
+
+    .hero-section {
+        padding: 50px 20px;
     }
-} */
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .services .service {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+}

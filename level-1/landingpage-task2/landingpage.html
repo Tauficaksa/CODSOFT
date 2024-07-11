@@ -13,9 +13,9 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#sec_about">About</a></li>
                     <li><a href="#">Internships</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#sec_Services">Services</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Apply Now</a></li>
@@ -45,12 +45,12 @@
             <p>Manage your time effectively with our flexible internship schedules.</p>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="sec_about">
         <h2>About Us</h2>
         <p>With 15 years of experience, Codesofy is dedicated to providing top-notch internship programs for aspiring professionals.</p>
         <button>Learn More</button>
     </section>
-    <section class="services">
+    <section class="services" id="sec_Services">
         <h2>Our Services</h2>
         <div class="service">
             <h3>Web Development</h3>
@@ -69,5 +69,18 @@
         <p>&copy; 2024 Codesofy. All Rights Reserved.</p>
         <p>Developed by Taufic Aksa</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+    </script>
 </body>
 </html>
