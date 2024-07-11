@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tauficaksa-calculator(codesoft)</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Taufic aksa - calculator</h1>
+        </div>
+        <div class="body">
+            <!-- <input type="text" id="ans" placeholder="Enter the value"> -->
+            <div id="ans" ></div>
+            <input type="button" id="c" value="C" onclick="displaynone()">
+
+            <input type="button" id="1" value="1" onclick="display(1)" >
+            <input type="button" id="2" value="2" onclick="display(2)" >
+            <input type="button" id="3" value="3" onclick="display(3)" >
+            <input type="button" id="/" value="/" onclick="display('/')" class="oparator">
+
+            <input type="button" id="4" value="4" onclick="display(4)" >
+            <input type="button" id="5" value="5" onclick="display(5)" >
+            <input type="button" id="6" value="6" onclick="display(6)" >
+            <input type="button" id="*" value="*" onclick="display('*')" class="oparator">
+
+            <input type="button" id="7" value="7" onclick="display(7)" >
+            <input type="button" id="8" value="8" onclick="display(8)" >
+            <input type="button" id="9" value="9" onclick="display(9)" >
+            <input type="button" id="-" value="-" onclick="display('-')" class="oparator">
+
+            <input type="button" id="0" value="0" onclick="display(0)" >
+            <input type="button" id="." value="." onclick="display('.')">
+            <input type="button" id="=" value="=" onclick="displayans('=')">
+            <input type="button" id="+" value="+" onclick="display('+')" class="oparator">
+
+
+        </div>
+        <div class="footer">
+            <p>&copy;Copyright 2024 by <a href="https://www.linkedin.com/in/tauficaksa/">Taufic aksa</a> . All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

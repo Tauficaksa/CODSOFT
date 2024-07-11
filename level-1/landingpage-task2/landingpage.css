@@ -2,22 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #282c34;
+    color: #ffffff;
+    animation: fadeIn 1s ease-in;
 }
 
 header {
     background-color: #333;
-    color: #fff;
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.contact-info span {
-    margin-right: 20px;
+    color: #61dafb;
+    animation: fadeIn 2s ease-in;
 }
 
 .main-header {
@@ -37,16 +30,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #61dafb;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #21a0a0;
 }
 
 .hero-section {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('hero.jpg'); /* Replace with your hero image */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to right, #21a0a0, #61dafb);
+    color: #ffffff;
+    animation: slideIn 1s ease-out;
 }
 
 .hero-section h1 {
@@ -63,17 +61,24 @@ nav ul li a {
     padding: 10px 20px;
     margin: 10px;
     border: none;
-    background-color: #ff6600;
-    color: #fff;
+    background-color: #ff6f61;
+    color: #ffffff;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-buttons button:hover {
+    background-color: #cc5346;
+    transform: scale(1.1);
 }
 
 .features {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(to right, #ff6600, #ffcc00);
+    background: linear-gradient(to right, #ff6f61, #21a0a0);
     padding: 50px 20px;
-    color: #fff;
+    color: #ffffff;
+    animation: fadeIn 2s ease-in;
 }
 
 .feature {
@@ -84,13 +89,31 @@ nav ul li a {
 .about-us {
     text-align: center;
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #282c34;
+    animation: fadeIn 2s ease-in;
+}
+
+.about-us button {
+    background-color: #21a0a0;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-us button:hover {
+    background-color: #1a807f;
+    transform: scale(1.1);
 }
 
 .services {
     text-align: center;
     padding: 50px 20px;
     background-color: #f4f4f4;
+    color: #282c34;
+    animation: fadeIn 2s ease-in;
 }
 
 .services .service {
@@ -101,7 +124,27 @@ nav ul li a {
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: #61dafb;
     text-align: center;
     padding: 20px;
 }
+
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+/* @keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
